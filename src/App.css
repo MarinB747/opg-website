@@ -39,3 +39,10 @@
   color: #fff;
   font-size: 100px;
 }
+
+.footer-container {
+  background-color: rgba(221, 211, 204, 0.733);
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}

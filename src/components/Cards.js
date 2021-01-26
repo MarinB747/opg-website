@@ -5,20 +5,20 @@ import "./Cards.css"
 function Cards() {
   return (
     <div className="cards">
-      <h1>check out thses epic destinations</h1>
+      <h1>Sto nudimo</h1>
       <div className="cards___container">
       <div className="cards__wrapper">
       <ul className="cards__items">
       <CardItem
-      src="/videos/img-9.jpg"
+      src="/videos/img-1.jpg"
       text= "dummy text"
-      label= "adventure"
-      path="usluge" />
+      label= "Usluge"
+      path="/usluge" />
       <CardItem
-      src="/videos/img-9.jpg"
+      src="/videos/img-2.jpg"
       text= "dummy text"
-      label= "adventure"
-      path="usluge" />
+      label= "O nama"
+      path="/o_nama" />
       </ul>
       </div>
       </div>
