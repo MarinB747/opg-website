@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "./components/Navbar.js";
@@ -17,7 +17,7 @@ function App() {
       <Route path="/o_nama" exact component={O_nama} />
       <Route path="/usluge" exact component={Usluge} />
       </Switch>
-      <Footer />
+      <Footer id="dno"/>
       </Router>
     </div>
   );

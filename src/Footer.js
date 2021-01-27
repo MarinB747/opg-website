@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button } from "./components/button" 
 import "./Footer.css"
 import "./components/button";
+import { Link } from "react-router-dom";
+import Navbar from "./components/Navbar"
+import {render} from "react-dom"
 
 function Footer() {
+  
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -31,6 +35,14 @@ function Footer() {
           POŠALJI UPIT
         </Button>
         </div>
+        </div>
+      </section>
+      <section className="footer-info">
+        <div >
+         <h3 className="footer-info-logo" style={{color: "white"}}>OPG Goluža</h3>
+         <div className="footer-info-area"><h5 className="footer-info-cont" style={{color: "white"}}>Email: neki@email.com</h5>
+         <h5 className="footer-info-cont" style={{color: "white"}}>Telefon: 09XXXXXXXX</h5>
+         </div>
         </div>
       </section>
     </div>
