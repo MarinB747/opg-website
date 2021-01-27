@@ -1,10 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Button } from "./components/button" 
 import "./Footer.css"
 import "./components/button";
-import { Link } from "react-router-dom";
-import Navbar from "./components/Navbar"
-import {render} from "react-dom"
+
 
 function Footer() {
   
