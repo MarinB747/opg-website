@@ -82,19 +82,6 @@ font-size: 2rem;
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 400px){
-  .footer-container {
-    background-color: rgba(221, 211, 204, 0.733);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-  }
-  
- 
-}
-
-
 @media only screen and (max-width: 910px){
   .footer-input{
     justify-content: center;
