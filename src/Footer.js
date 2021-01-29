@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from "./components/button" 
+import { Button, onClick } from "./components/button" 
 import "./Footer.css"
 import "./components/button";
-
+import sendEmail from "./components/email"
 
 function Footer() {
   
@@ -16,16 +16,16 @@ function Footer() {
         Ukoliko imate bilo kakvih upita slobodno nam se obratite putem naše kontakt forme 
         </p>
         <div className="input-areas">
-          <form className="footer_input">
-            <input type="name" name="name" placeholder ="Vaše ime"
+          <form className="footer_input" onSubmit={sendEmail} >
+            <input type="name" name="name" placeholder="Vaše ime"
             className="footer-input"/>
-             <input type="email" name="email" placeholder ="Vaš e-mail"
+             <input type="email" name="email" placeholder="Vaš e-mail"
             className="footer-input"/>
-             <input type="txt" name="number" placeholder ="Vaš telefon"
+             <input type="txt" name="phone" placeholder="Vaš telefon"
             className="footer-input"/>
           </form>
           <form>
-          <input type="txt" name="txt" placeholder ="Unesite vašu poruku"
+          <input type="txt" cols="30" rows="25" name="message" placeholder ="Unesite vašu poruku"
             className="footer-input2" />
           </form>
           <div className="footer-btn">
@@ -48,3 +48,4 @@ function Footer() {
 }
 
 export default Footer
+
