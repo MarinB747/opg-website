@@ -15,10 +15,12 @@ align-self: center;
 display: flex;
 justify-content: center;
 font-size: 2rem;
+
 }
 .footer-subscription-text {
   justify-content: center;
   display: flex;
+  text-align: center;
   font-size: 1.5rem;
 }
 .footer_input{
@@ -28,7 +30,6 @@ font-size: 2rem;
 }
 .footer-input{
   padding: 8px 20px;
-  border-radius: 2px;
   margin-left: 10%;
   outline: none;
   border: none;
@@ -36,6 +37,7 @@ font-size: 2rem;
   margin-bottom: 16px;
   border: 1px solid #fff;
   width: 20%;
+  border-radius: 15px;
   }
 
 .footer-input2{
@@ -44,7 +46,7 @@ font-size: 2rem;
   width: 80%;
   align-content: center;
   align-self: center;
-  border-radius: 2px;
+  border-radius: 15px;
   margin-right: 10px;
   outline: none;
   border: none;
@@ -110,6 +112,7 @@ font-size: 2rem;
     border: 1px solid #fff;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
   }
   
   .footer-subscription-heading{
@@ -120,17 +123,18 @@ font-size: 2rem;
   }
   .footer-info-logo{
     position: absolute;
-    bottom:10%;
-    left: 10%;
+    bottom:8%;
+    left: 5%;
     display: flex;
     font-size: 1.5rem;
   }
   .footer-info-area{
     position: absolute;
-    bottom: 10%;
-    right: 15%;
+    bottom: 7%;
+    right: 5%;
+    
   }
   .footer-info-cont{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }

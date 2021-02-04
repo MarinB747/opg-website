@@ -49,8 +49,8 @@ export default function Footer(){
         <div >
          <h3 className="footer-info-logo" style={{color: "white"}}>OPG Goluža</h3>
          <div className="footer-info-area">
-          <h5 className="footer-info-cont" style={{color: "white"}}>Email: neki@email.com</h5>
-          <h5 className="footer-info-cont" style={{color: "white"}}>Telefon: 09XXXXXXXX</h5>
+          <h5 className="footer-info-cont" style={{color: "white"}}>Email: <a href="mailto:blazevic.marin747@gmail.com">OPGgoluza@gmail.com</a></h5>
+          <h5 className="footer-info-cont" style={{color: "white"}}>Telefon: <a href="tel:+353830070770">0830070770</a></h5>
          </div>
         </div>
       </section>
