@@ -2,9 +2,12 @@ import React from 'react'
 import "./Footer.css"
 import emailjs from "emailjs-com";
 import{ init } from 'emailjs-com';
+import {Link} from "react-router-dom"
 init("user_aA2UgjKNawzlffIXMWDFo");
+const Scroll = require('react-scroll');
+    const scroll = Scroll.animateScroll;
 
-export default function Footer(){
+export default function Footer(props){
   function sendEmail(e) {
     e.preventDefault();
   
@@ -37,7 +40,7 @@ export default function Footer(){
             <input type="number" name="phone" placeholder="Broj Telefona" className="footer-input" />
             </label>
             <label>
-            <textarea type="text" name="message" placeholder="Unesite vašu poruku" className="footer-input2"></textarea>
+            <textarea type="text" name="message" placeholder="Unesite vašu poruku" className="footer-txt"></textarea>
             </label>
             <label className="footer-btn">
             <input type="submit" className="btn" value="POŠALJI UPIT" />
@@ -47,11 +50,14 @@ export default function Footer(){
         </section> 
         <section className="footer-info">
         <div >
-         <h3 className="footer-info-logo" style={{color: "white"}}>OPG Goluža</h3>
+         <h className="footer-info-logo" style={{color: "white"}}>OPG Goluža <i className="fas fa-seedling" /></h>
          <div className="footer-info-area">
-          <h5 className="footer-info-cont" style={{color: "white"}}>Email: <a href="mailto:blazevic.marin747@gmail.com">OPGgoluza@gmail.com</a></h5>
-          <h5 className="footer-info-cont" style={{color: "white"}}>Telefon: <a href="tel:+353830070770">0830070770</a></h5>
-         </div>
+          <h5 className="footer-info-cont" style={{color: "white"}}>Email:
+          <a  href="mailto:blazevic.marin747@gmail.com" style={{color: "white", textDecoration: "none"}}>OPGgoluza@gmail.com</a></h5>
+          <h5 className="footer-info-cont" style={{color: "white"}}>Telefon: 
+          <a  href="tel:+353830070770" style={{color: "white", textDecoration: "none"}}>+353830070770</a></h5>          
+        </div>
+        <Link to="/privatnost" className="priv" onClick={() =>{scroll.scrollToTop();}}>Politika privatnosti</Link>  
         </div>
       </section>
           </div>

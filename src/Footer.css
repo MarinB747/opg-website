@@ -43,7 +43,7 @@ color: white;
   border-radius: 15px;
   }
 
-.footer-input2{
+.footer-txt{
   justify-content: center;
   height: 120px;
   width: 80%;
@@ -75,6 +75,7 @@ color: white;
   display: flex;
   align-self: center;
   font-size: 16px;
+  margin-bottom: 12px;
 }
 
 .footer-info{
@@ -87,20 +88,96 @@ color: white;
 .footer-info-logo{
   position: absolute;
   bottom:8%;
-  left: 10%;
+  left: 2%;
   display: flex;
   font-size: 2rem;
 }
 .footer-info-area{
   position: absolute;
-  bottom: 7%;
-  right: 25%;
+  bottom: 6%;
+  right: 2%;
 }
 .footer-info-cont{
   font-size: 1.5rem;
 }
+.fa-seedling {
+  margin-top: 4%;
+}
+.priv {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 40px;
+}
 
-@media only screen and (max-width: 910px){
+
+@media only screen and (max-width: 950px){
+  .footer-info{
+    background-color: #050505;
+    box-sizing: content-box;
+    height: 80px;
+    width: 100%;
+  }
+  .footer-input{
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 2px;
+    margin-right: 2px;
+    margin-left: 10%;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .footer-subscription-heading{
+    font-size: 1.5rem;
+  }
+  .footer-subscription-text{
+    font-size: 1rem;
+  }
+  .footer-info-logo{
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .footer-info-area{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    
+  }
+  .footer-info-cont{
+    font-size: 0.9rem;
+  }
+  .priv {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .footer-info{
+    background-color: #050505;
+    box-sizing: content-box;
+    height: 240px;
+    width: 100%;
+  }
   .footer-input{
     justify-content: center;
     padding: 8px 20px;
@@ -125,19 +202,34 @@ color: white;
     font-size: 1rem;
   }
   .footer-info-logo{
-    position: absolute;
-    bottom:8%;
-    left: 5%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
+    bottom: 27%;
+    width: 90%;
+    margin: 0 auto; 
   }
   .footer-info-area{
-    position: absolute;
-    bottom: 7%;
-    right: 5%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 14%;
+    width: 90%;
+    margin: 0 auto;    
   }
   .footer-info-cont{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+  }
+  .priv {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 180px; 
   }
 }
+

@@ -4,6 +4,8 @@
 
 h1 {
   text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
 }
 
 .cards__container {
@@ -18,10 +20,6 @@ h1 {
 .cards__wrapper {
   position: relative;
   margin: 50px 0 45px;
-}
-
-.cards__items {
-  margin-bottom: 24px;
 }
 
 .cards__item {

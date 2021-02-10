@@ -23,6 +23,7 @@ function Navbar() {
             <div className="navbar-container">
                 <Link to ="/" className="navbar-logo" onClick={() =>{closeMobileMenu();scroll.scrollToTop();}}>
                     OPG Goluža
+                    <i class="fas fa-seedling" />
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                   <i className={click ? "fas fa-times" : "fas fa-bars"} />  
@@ -42,7 +43,6 @@ function Navbar() {
                         <Link to ="/o_nama" className="nav-links" onClick={() =>{closeMobileMenu();scroll.scrollToTop();}}>
                             O nama
                          </Link>   
-                      
                     </li>
                     <li className="nav-item">
                         <Link 

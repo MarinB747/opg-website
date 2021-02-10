@@ -1,9 +1,14 @@
 import React from "react";
 import "../../App.css";
 import "./O_nama.css"
+import { Helmet } from 'react-helmet';
+
 export default function O_nama() {
   return (
   <div className="o_nama">
+     <Helmet>
+        <title>O nama</title>
+      </Helmet>
     <h1>O nama</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

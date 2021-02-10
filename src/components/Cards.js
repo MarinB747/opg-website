@@ -17,8 +17,8 @@ function Cards() {
       <CardItem
       src="/videos/img-2.jpg"
       text= "dummy text"
-      label= "O nama"
-      path="/o_nama" />
+      label= "Usluge"
+      path="/usluge" />
       </ul>
       </div>
       </div>
