@@ -9,7 +9,7 @@
   overflow-x: visible;
 }
 
-.navbar-container {
+.navbar__container {
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -17,7 +17,7 @@
   max-width: 100%;
 }
 
-.navbar-logo {
+.navbar__logo {
   color: #fff;
   justify-self: start;
   cursor: pointer;
@@ -28,9 +28,7 @@
   margin-left: 2%;
 }
 
-
-
-.nav-menu {
+.navbar__menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
   list-style: none;
@@ -39,11 +37,11 @@
   top: 0;
 }
 
-.nav-item {
+.navbar__item {
   height: 80px;
 }
 
-.nav-links {
+.navbar__links {
   color: #fff;
   display: flex;
   align-items: center;
@@ -52,7 +50,7 @@
   height: 100%;
 }
 
-.nav-links:hover {
+.navbar__links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
@@ -61,20 +59,21 @@
   color: #fff;
 }
 
-.nav-links-mobile {
+.navbar__links-mobile {
   display: none;
 }
 
-.menu-icon {
+.menu__icon {
   display: none;
 }
 
 @media screen and (max-width: 760px) {
-  .NavbarItems {
-    position: relative;
+  .navbar__item {
+    height: 80px;
+    overflow: hidden;
   }
 
-  .nav-menu {
+  .navbar__menu {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -85,8 +84,8 @@
     opacity: 1;
     transition: all 0.5s ease;
   }
-  
-  .nav-menu.active {
+
+  .navbar__menu.active {
     background: #242222;
     left: 0;
     opacity: 1;
@@ -94,27 +93,27 @@
     z-index: 1;
   }
 
-  .nav-links {
+  .navbar__links {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
   }
 
-  .nav-links:hover {
+  .navbar__links:hover {
     background-color: #fff;
     color: #242424;
     border-radius: 0;
   }
 
-  .navbar-logo {
+  .navbar__logo {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(5%, 50%);
   }
 
-  .menu-icon {
+  .menu__icon {
     display: block;
     position: absolute;
     top: 0;
@@ -122,7 +121,7 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    margin-top: 2%;
+    margin-top: 0.5%;
   }
 
   .fa-times {
@@ -130,7 +129,7 @@
     font-size: 2rem;
   }
 
-  .nav-links-mobile {
+  .navbar__links-mobile {
     display: block;
     text-align: center;
     margin: 2rem auto;
@@ -140,12 +139,12 @@
     font-size: 1.5rem;
     background-color: transparent;
     color: #fff;
-    padding: 14px 20px;
+    padding: 14px 10px;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
   }
 
-  .nav-links-mobile:hover {
+  .navbar__links-mobile:hover {
     background: #fff;
     color: #242424;
     transition: 250ms;

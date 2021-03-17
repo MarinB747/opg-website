@@ -1,15 +1,15 @@
-import React from 'react'
-import "../App.css"
-import "./herosection.css"
+import React from "react";
+import "../App.css";
+import "./herosection.css";
 
 function HeroSection() {
   return (
-    <div className="hero-container">
-       <video src="/videos/video-2.mp4" autoPlay loop muted/> 
+    <div className="hero__container">
+      <video src="/videos/video-2.mp4" autoPlay loop muted />
       <h1>Nekakav slogan</h1>
       <p></p>
-      </div>
-  )
+    </div>
+  );
 }
 
-export default HeroSection
+export default HeroSection;
